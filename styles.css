@@ -1,0 +1,203 @@
+* {
+    box-sizing : border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    
+    font-family: 'Fira Sans', sans-serif;
+    
+    
+    
+}
+
+   
+
+.container{
+    width: auto;
+    height: auto;
+    margin:auto;
+   
+    
+}
+
+
+
+.nav-brand{
+    padding-top: 15px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+}
+
+nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0; 
+}
+ 
+ul,ol{
+    list-style: none;
+
+}
+
+.nav li a{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display:block;
+
+}
+.nav li a:hover{
+    background-color: coral;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+.nav li ul li{
+    position: relative;
+}
+
+.nav li ul li ul{
+    right: -100px;
+    top:0px;
+}
+hr{
+    margin-top: 10px;
+    color: gray;
+}
+h2{
+    margin-top: 40px;
+    text-align: center;  
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+.showcase {
+    width: 100%;
+    height: 550px;
+    font-size: 20px;
+    font-weight: bolder;
+    color:black;
+    background: url(./IMG/caminorecorrido/pexels-fauxels-3184287.jpg) no-repeat center center/cover;
+    padding-bottom: 50px; 
+    flex-direction:column;
+    align-items:center;
+    display:flex;
+    justify-content:flex-end;
+   
+}
+
+.areas{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:25px;
+    margin: 10px 0;
+    
+}
+
+
+.areas img{
+    width: 100%;
+    height: 180px;
+}
+
+.areas h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.areas a{
+    padding: 10px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+.contenido{
+    width: 100%;
+    height: 300px;
+    background: url(./IMG/empresasamigas/pexels-mitchell-luo-3694711.jpg)no-repeat center center/cover;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+}
+
+.contenido .container{
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #ffffff;
+    
+
+}
+
+
+
+.empresas{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+    margin: 20px 0;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+}
+.empresas img{
+    padding: 15px 0;
+    display: inline-block;
+    width: 50%;
+    height: 90px;
+}
+.social{
+    margin:50px;
+}
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.links a{
+    margin: 0 30px;
+}
+.links a i{
+    font-size: 3rem;
+    color: black;
+}
+
+@media (max-width:700px){
+    .areas{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .empresas .contenido{
+        width: 80%;
+        
+    }
+}

@@ -1,0 +1,180 @@
+* {
+    box-sizing : border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(165, 165, 165);
+    
+    
+}
+.nav-brand{
+    padding-top: 15px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+}
+
+nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0; 
+}
+ 
+ul,ol{
+    list-style: none;
+
+}
+
+.nav li a{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display:block;
+
+}
+.nav li a:hover{
+    background-color: coral;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+.nav li ul li{
+    position: relative;
+}
+
+.nav li ul li ul{
+    right: -100px;
+    top:0px;
+}
+
+.pantalla-dividida{
+    width: 90%;
+    
+    max-width: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+     
+
+}
+
+.pantalla-dividida .izquierda{
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: left;
+    width: 100%;
+
+}
+.pantalla-dividida .izquierda .datos_personales{
+   grid-row: span 2;
+  
+}
+
+.label_nbr,
+.label_apel,
+.label_tipodoc,
+.label_doc,
+.label_ciudadN,
+.label_provinciaN,
+.label_paisN,
+.label_ciudadR,
+.label_provinciaR,
+.label_paisR {
+    width: 50%;
+    display: inline-block;
+}
+
+.pantalla-dividida .derecha{
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    grid-column: span 2;
+}
+
+
+.label_tel,
+.label_cel,
+.label_mail,
+.label_linkedin,
+.label_github{
+    width: 50%;
+    display: inline-block;
+}
+
+
+hr{
+    margin-top: 5px;
+    color: gray;
+}
+.label_desc_estudios,
+.label_inst,
+.label_año-inicio,
+.label_estado,
+.label_titulo
+{
+    width: 50%;
+    display: inline-block;
+}
+.label_desc_trab,
+.label_emp,
+.label_tipo_puesto,
+.label_año-inicio,
+.label_año-fin{
+    width: 50%;
+    display: inline-block;
+}
+
+.agregar-estudios{
+    border-bottom: solid 4px;
+}
+
+.fotoCV img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    
+}
+.btn_CV{
+    width: 300px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    
+
+}
+
+.estados_estadisticas,
+.cursos_EmpleoTecnia,
+.Titulos_diplomas,
+.preferencias,
+.preferencias_cursos,
+.preferencias_laborales
+{
+    text-align: center;
+}

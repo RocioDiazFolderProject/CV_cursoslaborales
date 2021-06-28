@@ -1,0 +1,62 @@
+* {
+    box-sizing : border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    
+    font-family: 'Fira Sans', sans-serif;
+    background-color:darkgrey;
+    /*background-color: white;*/
+    width: 100%;
+    height: 100%;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    
+}
+
+hr{
+    color:white;
+}
+header>nav-brand{
+    background-color: black;
+}
+
+
+.video-novedades,
+.ingenieria,
+.arte,
+.desarrollo {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.video-novedades>video,
+.ingenieria>video,
+.arte>video,
+.desarrollo>video {
+    width: 250px;;
+    height: 250px;
+    
+   
+}
+.card{
+    width: 50%;
+    margin:10px;
+    border-radius: 6px;
+    overflow:hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2) ;
+    cursor:default;
+    transition: all 48ms ease;
+    
+    align-items: center;
+}
+.card:hover{
+    box-shadow: 10px 10px 30px rgba(248, 178, 49, 0.4) ;
+}
+
+
